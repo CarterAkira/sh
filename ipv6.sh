@@ -30,14 +30,14 @@ echoColor "====== 启用ipv6 ======\n"
 # 将下面的重定向内容替换为上面示例的配置片段内容
 cat << EOF >>  /etc/network/interfaces
 
- auto he-ipv6
-  iface he-ipv6 inet6 v4tunnel
-   address 2001:470:1f04:58f::2
-   netmask 64
-   endpoint 72.52.104.74
-   local 198.23.254.128
-   ttl 255
-   gateway 2001:470:1f04:58f::1
+auto he-ipv6
+iface he-ipv6 inet6 v4tunnel
+        address 2001:470:1f04:58f::2
+        netmask 64
+        endpoint 72.52.104.74
+        local 198.23.254.128
+        ttl 255
+        gateway 2001:470:1f04:58f::1
 EOF
 
 echoColor "====== 修改网络配置文件成功 ======\n"
